@@ -20,7 +20,7 @@ class Upload:
         profile = webdriver.FirefoxProfile(root_profile_directory.replace("\\", "/"))
         options = webdriver.FirefoxOptions()
         options.headless = headless
-        ptions.add_argument("--width=1920")
+        options.add_argument("--width=1920")
         options.add_argument("--height=1080")
         self.driver = webdriver.Firefox(firefox_profile=profile, options=options)
         self.timeout = timeout
